@@ -12,20 +12,19 @@
         <a href="table.html">Таблица</a>
     </div>
     <h1>Сравнительная характеристика пород собак</h1>
-    <form id="dogForm">
-        <label for="breed">Порода:</label>
-        <input type="text" id="breed" name="breed" required>
+    <form id="dogs">
+        <fieldset>
+            <label for="breed">Порода: </label>
+            <input type="text" id="breed" name="breed" required><br>
+            <label for="size">Размер: </label>
+            <input type="text" id="size" name="size" required><br>
+            <label for="care">Уход: </label>
+            <input type="text" id="care" name="care" required><br>
+            <label for="features">Особенности: </label>
+            <input type="text" id="features" name="features" required><br>
 
-        <label for="size">Размер:</label>
-        <input type="text" id="size" name="size" required>
-
-        <label for="care">Уход:</label>
-        <input type="text" id="care" name="care" required>
-
-        <label for="features">Особенности:</label>
-        <input type="text" id="features" name="features" required>
-
-        <button type="button" onclick="addDog()">Добавить</button>
+            <input type="submit" value="Добавить">
+        </fieldset>
     </form>
     <table>
         <caption>Информация о породах</caption>
@@ -93,35 +92,6 @@
             </tr>
         </tbody>
     </table>
-    <form id="students">
-        <fieldset>
-            <label for="id">ID: </label>
-            <input type="number" id="id" name="id" min="1" required><br>
-            <label for="fio">ФИО студента: </label>
-            <input type="text" id="fio" name="fio" size="32" required><br>
-            <label for="grade_book">Номер зачетной книжки: </label>
-            <input type="number" id="grade_book" name="grade_book" min="100" required><br>
-            <label for="group">Номер группы: </label>
-            <input type="number" id="group" name="group" min="10" max="20" required><br>
-            <label for="gender">Пол: </label>
-            <input list="genders" name="gender">
-            <datalist id="genders">
-                <option value="Мужской"></option>
-                <option value="Женский"></option>
-            </datalist><br>
-            <label for="age">Возраст: </label>
-            <input type="number" id="age" name="age" min="1" required><br>
-            <label for="form">Форма поступления: </label>
-            <input list="forms" name="form">
-            <datalist id="forms">
-                <option value="Очная"></option>
-                <option value="Заочная"></option>
-            </datalist><br>
-            <label for="faculty">Название направления: </label>
-            <input type="text" id="faculty" name="faculty" required><br>
 
-            <input type="submit" value="Добавить">
-        </fieldset>
-    </form>
 </body>
 </html>
