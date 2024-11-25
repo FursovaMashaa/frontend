@@ -8,6 +8,7 @@
     crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head>
 
 <body>
@@ -31,9 +32,136 @@
             </li>
         </ul>
     </nav>
-    <div class="alert alert-warning alert-dismissible fade show m-3" role="alert">
-        <strong>Внимание!</strong> Данная страница сейчас находится в разработке.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Александр Петров</h1>
+                <p><strong>Дата рождения:</strong> 26 ноября 1989 года</p>
+                <p><strong>Полных лет:</strong> 35 года</p>
+                <p><strong>Фильмы:</strong> 15 фильмов</p>
+                <p><strong>Жанры:</strong> драма, комедия, триллер</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="img/info1.jpg" alt="Александр Петров" class="actor-photo" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+
+        <h1 class="text-center mb-4">Лучшие фильмы</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films1.jpg" class="card-img-top" alt="Название фильма 1">
+                    <div class="card-body">
+                        <h5 class="card-title">НАДВОЕ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films2.jpg" class="card-img-top" alt="Название фильма 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ЗВОНИТЕ ДиКАПРИО!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films3.jpg" class="card-img-top" alt="Название фильма 3">
+                    <div class="card-body">
+                        <h5 class="card-title">ГОГОЛЬ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films4.jpg" class="card-img-top" alt="Название фильма 4">
+                    <div class="card-body">
+                        <h5 class="card-title">ЗАТМЕНИЕ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films5.jpg" class="card-img-top" alt="Название фильма 5">
+                    <div class="card-body">
+                        <h5 class="card-title">ЛАВСТОРИ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="width: 100%; height: 100%;">
+                    <img src="img/films6.jpg" class="card-img-top" alt="Название фильма 6">
+                    <div class="card-body">
+                        <h5 class="card-title">ЧЕЛОВЕК БОЖИЙ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center"style="width: 100%; height: 100%;">
+                    <img src="img/film1.jpg" class="card-img-top" alt="Название фильма 7">
+                    <div class="card-body">
+                        <h5 class="card-title">ПОЛИЦЕСКИЙ С РУБЛЕВКИ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center"style="width: 100%; height: 100%;">
+                    <img src="img/film2.jpg" class="card-img-top" alt="Название фильма 8">
+                    <div class="card-body">
+                        <h5 class="card-title">ЛЕД 3</h5>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mt-4">Интересные факты:</h5>
+                <ul>
+                    <li>В детстве Саша хотел стать футболистом, но его мечтам не суждено было сбыться.</li>
+                    <li>Наибольшую популярность актёру принесла роль Гриши Измайлова в нашумевшем комедийном сериале "Полицейский с Рублёвки".</li>
+                    <li>Саша Петров вошёл в ТОП-5 самых востребованных молодых российских актеров, которые достигли больших высот в карьере до 30 лет.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <img src="img/photo.webp" alt="Александр Петров" class="actor-photo" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <h2 class="text-center mb-4">Фильмография Саши Петрова</h2>
+        <table class="table table-striped filmography-table">
+            <thead>
+                <tr>
+                    <th scope="col">Год</th>
+                    <th scope="col">Русское название</th>
+                    <th scope="col">Оригинальное название</th>
+                    <th scope="col">Роль</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">2019</td>
+                    <td>Полицейский с Рублёвки</td>
+                    <td>Полицейский с Рублёвки</td>
+                    <td>Гриша Измайлов</td>
+                </tr>
+                <tr>
+                    <td>Гоголь</td>
+                    <td>Гоголь</td>
+                    <td>Алексей Данилов</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2020</td>
+                    <td>Герой</td>
+                    <td>Герой</td>
+                    <td>Андрей Голубев</td>
+                </tr>
+                <tr>
+                    <td>Текст</td>
+                    <td>Текст</td>
+                    <td>Илья Горюнов</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 
