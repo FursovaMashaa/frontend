@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="header">
+        <a href="lab1_and_2.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+    <h1>Сравнительная характеристика пород собак</h1>
+    <form id="dogForm">
+        <label for="breed">Порода:</label>
+        <input type="text" id="breed" name="breed" required>
+
+        <label for="size">Размер:</label>
+        <input type="text" id="size" name="size" required>
+
+        <label for="care">Уход:</label>
+        <input type="text" id="care" name="care" required>
+
+        <label for="features">Особенности:</label>
+        <input type="text" id="features" name="features" required>
+
+        <button type="button" onclick="addDog()">Добавить</button>
+    </form>
+    <table>
+        <caption>Информация о породах</caption>
+        <thead>
+            <tr>
+                <th>Порода</th>
+                <th>Размер</th>
+                <th>Уход</th>
+                <th>Особенности</th>
+            </tr>
+        <tbody id="dogTableBody">
+            <tr>
+                <td>Лабрадор ретривер</td>
+                <td>Средний</td>
+                <td>Ежедневные прогулки, регулярная чистка шерсти</td>
+                <td>Ласковый, умный, подходит для семей с детьми</td>
+            </tr>
+            <tr>
+                <td>Чихуахуа</td>
+                <td>Маленький</td>
+                <td>Ежедневные короткие прогулки, повышенный уход за зубами</td>
+                <td>Очень маленький кроличий пес, предпочитает быть единственным питомцем в семье</td>
+            </tr>
+            <tr>
+                <td>Немецкая овчарка</td>
+                <td>Большой</td>
+                <td>Ежедневные долгие прогулки, регулярная тренировка, частая чистка шерсти</td>
+                <td>Преданная, умная, работоспособная порода, подходит для службы и охраны</td>
+            </tr>
+            <tr>
+                <td>Йоркширский терьер</td>
+                <td>Маленький</td>
+                <td>Ежедневные короткие прогулки, регулярная стрижка шерсти</td>
+                <td>Жизнерадостный, энергичный, подходит для жизни в квартире</td>
+            </tr>
+            <tr>
+                <td>Бульдог</td>
+                <td>Средний</td>
+                <td>Умеренные прогулки, регулярная чистка складок кожи</td>
+                <td>Спокойный, дружелюбный, хороший компаньон для семьи</td>
+            </tr>
+            <tr>
+                <td>Пудель</td>
+                <td>Средний/Большой</td>
+                <td>Регулярная стрижка, ежедневные прогулки</td>
+                <td>Умный, легко обучаемый, подходит для активных людей</td>
+            </tr>
+            <tr>
+                <td>Сибирский хаски</td>
+                <td>Большой</td>
+                <td>Долгие прогулки и активные игры, регулярная чистка шерсти</td>
+                <td>Энергичный, независимый, требует много физической активности</td>
+            </tr>
+            <tr>
+                <td>Ши-тцу</td>
+                <td>Маленький</td>
+                <td>Короткие прогулки, регулярная стрижка и уход за шерстью</td>
+                <td>Дружелюбный, игривый, подходит для жизни в квартире</td>
+            </tr>
+            <tr>
+                <td>Басенджи</td>
+                <td>Средний</td>
+                <td>Ежедневные прогулки, минимальный уход за шерстью</td>
+                <td>Независимый, умный, не лает, но издает уникальные звуки</td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="students">
+        <fieldset>
+            <label for="id">ID: </label>
+            <input type="number" id="id" name="id" min="1" required><br>
+            <label for="fio">ФИО студента: </label>
+            <input type="text" id="fio" name="fio" size="32" required><br>
+            <label for="grade_book">Номер зачетной книжки: </label>
+            <input type="number" id="grade_book" name="grade_book" min="100" required><br>
+            <label for="group">Номер группы: </label>
+            <input type="number" id="group" name="group" min="10" max="20" required><br>
+            <label for="gender">Пол: </label>
+            <input list="genders" name="gender">
+            <datalist id="genders">
+                <option value="Мужской"></option>
+                <option value="Женский"></option>
+            </datalist><br>
+            <label for="age">Возраст: </label>
+            <input type="number" id="age" name="age" min="1" required><br>
+            <label for="form">Форма поступления: </label>
+            <input list="forms" name="form">
+            <datalist id="forms">
+                <option value="Очная"></option>
+                <option value="Заочная"></option>
+            </datalist><br>
+            <label for="faculty">Название направления: </label>
+            <input type="text" id="faculty" name="faculty" required><br>
+
+            <input type="submit" value="Добавить">
+        </fieldset>
+    </form>
+</body>
+</html>

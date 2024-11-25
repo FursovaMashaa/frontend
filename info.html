@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+          background-color: black;
+      }
+      .sidebar-nav {
+          width: 250px;
+          height: 100vh; 
+          position: fixed; 
+          top: 56px; 
+          left: 0; 
+          overflow-y: auto; 
+      }
+      .content {
+          margin-left: 260px;
+          padding: 20px;
+      }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+   <nav class="navbar navbar-expand-sm bg-dark justify-content-center navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="лабы1-5/lab1_and_2.html">Основная страница</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="лабы1-5/page2.html">Позиционирование элементов</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="лабы1-5/table.html">Таблица</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="лабы1-5/info.html">Информация об актере</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="navbar-example" class="sidebar-nav bg-dark text-light p-3">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active text-light" href="#demo">Карусель</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#movies-cards">Карточки с фильмами</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#actor-info">Краткая информация об актёре</a>
+            </li>
+        </ul>
+    </nav>
+
+  <div class="content">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img\info1.jpg" alt="Фото Алекстандра Петрова 1" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img\info2.jpg" alt="Фото Алекстандра Петрова 2" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img\info3.jpg" alt="Фото Алекстандра Петрова 3" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img\info4.jpg" alt="Фото Алекстандра Петрова 4" class="d-block" style="width:100%">
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div id="movies-cards" class="container mt-3" style="padding: 20px; color: white;">
+        <h2>Карточки с фильмами</h2>
+        <div class="row">
+            <!-- Первая карточка -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="img/film1.jpg" class="card-img-top" alt="Фильм 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Полицейский с Рублевки</h5>
+                        <p class="card-text">«Полицейский с Рублёвки» — российский телесериал в жанре драмеди 
+                          о полицейских из вымышленного ОМВД «Барвиха-Северное» в Москве-2. 
+                          С 5 сезона действия происходят в полицейской академии Барвихи.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/series/913033/" class="btn" style="background-color: #555; color: white;">Посмотреть на Кинопоиск</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Вторая карточка -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="img/film2.jpg" class="card-img-top" alt="Фильм 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Лед 3</h5>
+                        <p class="card-text">Надя выросла и стала фигуристкой. Она мечтает о «Кубке льда», 
+                          как когда-то мечтала ее мама. Горин возражает против спортивной 
+                          карьеры дочери — он оберегает ее от любых трудностей. На тайной 
+                          тренировке Надя знакомится с молодым и дерзким хоккеистом из Москвы, 
+                          и между ними вспыхивает первая любовь. Отец не верит в искренность чувств юноши и разлучает пару.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/5275429/" class="btn" style="background-color: #555; color: white;">Посмотреть на Кинопоиск</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Третья карточка -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="img/film3.jpg" class="card-img-top" alt="Фильм 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Сто лет тому вперёд</h5>
+                        <p class="card-text">Они живут в разных мирах. Коля Герасимов — в Москве 2024 года, Алиса Селезнёва — на сто лет позже. 
+                          Коля — обычный старшеклассник, ему нет дела до будущего. Алису не отпускает прошлое: 
+                          она пытается найти маму, которая пропала, сражаясь с космическими пиратами. Встреча 
+                          Алисы и Коли станет началом невероятных приключений.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/1334852/" class="btn" style="background-color: #555; color: white;">Посмотреть на Кинопоиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="actor-info" class="container mt-3 text-center" >
+          <h3>Краткая информация об Александре Петрове</h3>
+          <button 
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="collapse" 
+            data-bs-target="#alexanderPetrovInfo"
+            >
+            Показать информацию
+          </button>
+          <div id="alexanderPetrovInfo" class="collapse">
+              <p><strong>Полное имя:</strong> Александр Андреевич Петров</p>
+              <p><strong>Дата рождения:</strong> 25 января 1989 года</p>
+              <p><strong>Место рождения:</strong> Переславль-Залесский, Ярославская область</p>
+              <p><strong>Образование:</strong> Ярославский государственный театральный институт, ГИТИС (РАТИ), окончил в 2012 году.</p>
+              <p><strong>Личная жизнь:</strong> Был женат на актрисе Ирине Старшенбаум, пара развелась в 2020 году.</p>
+          </div>
+      </div>
+    </div>
+  
+    
+
+</body>
+
+</html>
